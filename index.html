@@ -467,7 +467,122 @@
             </li>
           </ul>
         </div>
+        <!--== form foot ==-->
+        <div class="form-container">
+          <form class="form-foot">
+            <label class="label-form-foot" for="email-foot-adrs"
+              >Subscribe
+              <input
+                class="form-foot-input"
+                type="email"
+                name="email-foot-adrs"
+                id="email-foot-adrs"
+                placeholder="E-mail"
+                required
+              />
+            </label>
+            <button type="submit" class="form-foot-btn">
+              Subscribe
+              <svg class="foot-icon-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <!--== backdroppii ==-->
+    <div class="backdrop is-ope">
+      <div class="model">
+        <button class="modal-close-btn" type="button">
+          <svg class="backdrop-icon-btn" width="8" height="8">
+            <use href="./images/icons.svg#icon-Vector-1"></use>
+          </svg>
+        </button>
+        <p class="drp-txt">Leave your contacts and we will call you back</p>
+        <form class="rewiew-form">
+          <div class="rewiew-form-wrapper">
+            <label for="user-name" class="rewiew-form-label">Name</label>
+            <div class="rewiew-form-input-icns">
+              <input
+                type="text"
+                class="rewiew-form-input"
+                name="user-name"
+                id="user-name"
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄ]"
+                title="Nikita"
+                required
+              />
+              <svg class="rewiew-form-icn-svg" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-user_icon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="rewiew-form-wrapper">
+            <label for="phone-number" class="rewiew-form-label">Phone</label>
+            <div class="rewiew-form-input-icns">
+              <input
+                type="tel"
+                class="rewiew-form-input"
+                name="phone-number"
+                id="phone-number"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="xxx-xxx-xx-xx"
+                required
+              />
+              <svg class="rewiew-form-icn-svg" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-tel_icon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="rewiew-form-wrapper">
+            <label for="email-adress" class="rewiew-form-label">Email</label>
+            <div class="rewiew-form-input-icns">
+              <input
+                type="email"
+                class="rewiew-form-input"
+                name="email-adress"
+                id="email-adress"
+                required
+              />
+              <svg class="rewiew-form-icn-svg" width="18px" height="24px">
+                <use href="./images/icons.svg#icon-email_icon"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="rewiew-form-wrapper">
+            <label for="user-comment" class="rewiew-form-label">Comment</label>
+            <textarea
+              type=""
+              class="rewiew-form-textarea"
+              placeholder="Text input"
+              id="user-comment"
+              name="user-comment"
+              required
+            ></textarea>
+          </div>
+          <div class="rewiew-form-checkbox"></div>
+          <input
+            type="checkbox"
+            class="rewiew-form-privacy-checkbox-input visually-hidden"
+            name="privacy-police"
+            id="privacy-police"
+          />
+          <label for="privacy-police" class="rewiew-form-checkbox-label">
+            <span class="rewiew-form-checkbox-spm">
+              <svg class="rewiew-form-icon-checkbox">
+                <use
+                  href="./images/icons.svg#icon-Vector"
+                  width="10"
+                  height="8"
+                ></use>
+              </svg> </span
+            >I accept the terms and conditions of the
+            <a class="privacy-police-link" href="">Privacy Policy</a></label
+          >
+          <button class="rewiew-form-checkbox-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
