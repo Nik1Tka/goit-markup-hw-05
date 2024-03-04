@@ -608,6 +608,7 @@ p {
   fill: #2e2f42;
   width: 8px;
   height: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model {
@@ -620,7 +621,10 @@ p {
   transform: translate(-50%, -50%);
   background: #fcfcfc;
   border-radius: 4px;
-  padding: 24px;
+  box-shadow: зі значенням 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
 }
 
 .drp-txt {
@@ -631,7 +635,6 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 72px;
   margin-right: 24px;
   margin-bottom: 16px;
   width: 360px;
@@ -639,17 +642,30 @@ p {
 }
 
 .modal-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
   position: absolute;
-  top: 23px;
+  top: 24px;
   right: 24px;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   fill: #e7e9fc;
-  border-radius: 100%;
+  border-radius: 50%;
   width: 24px;
   height: 24px;
   border-radius: 100%;
   stroke-width: 1px;
   stroke: rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf;
+  fill: #ffffff;
 }
 
 .rewiew-form-textarea::placeholder {
@@ -662,7 +678,7 @@ p {
 }
 
 .rewiew-form-wrapper {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .rewiew-form-input {
@@ -672,6 +688,9 @@ p {
   border-radius: 4px;
   padding-left: 38px;
   transition: 250ms linear;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rewiew-form-label {
@@ -680,7 +699,7 @@ p {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
@@ -695,7 +714,7 @@ p {
   left: 16px;
   transform: translateY(-50%);
   fill: #2e2f42;
-  transition: 250ms linear;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rewiew-form-input:focus {
@@ -715,6 +734,13 @@ p {
   resize: none;
   padding: 8px 16px;
   transition: border-color 250ms linear;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rewiew-form-textarea:focus {
@@ -730,13 +756,13 @@ p {
 }
 
 .rewiew-form-checkbox {
-  position: relative;
+  margin-bottom: 24px;
 }
 
 .rewiew-form-checkbox-spm {
   display: inline-flex;
   justify-content: center;
-  padding: 3px;
+  align-items: center;
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -744,13 +770,17 @@ p {
   fill: transparent;
   cursor: pointer;
   margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .rewiew-form-privacy-checkbox-input:checked
   + .rewiew-form-checkbox-label
   .rewiew-form-checkbox-spm {
-  background-color: #4d5ae5;
+  background-color: #404bbf;
   fill: #f4f4fd;
+  border: none;
 }
 
 .privacy-police-txt {
@@ -766,21 +796,29 @@ p {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
 
 .rewiew-form-checkbox-btn {
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   border: none;
-  color: #fff;
+  color: #ffffff;
   margin-left: 96px;
   margin-right: 120px;
   margin-top: 24px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
