@@ -551,9 +551,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   color: #fff;
@@ -573,9 +576,12 @@ p {
   width: 264px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: #2e2f42;
+  background-color: transparent;
   padding-left: 16px;
   color: #fff;
+  line-height: 2;
+  font-size: 12px;
+  letter-spacing: 0.04px;
 }
 /*=== BackDroppii ===*/
 
