@@ -522,6 +522,17 @@ p {
   flex-direction: column;
 }
 
+.foot-inp-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-left: 80px;
+  margin-bottom: 16px;
+}
+
 .form-foot-input:focus {
   outline: none;
 }
@@ -563,7 +574,6 @@ p {
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #2e2f42;
-  margin-top: 16px;
   padding-left: 16px;
   color: #fff;
 }
@@ -711,6 +721,10 @@ p {
   text-decoration: underline;
   line-height: 1.33333;
   text-decoration-skip-ink: none;
+}
+
+.rewiew-form-checkbox {
+  position: relative;
 }
 
 .rewiew-form-checkbox-spm {
